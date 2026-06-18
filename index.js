@@ -31,7 +31,7 @@ const errorMessage = document.getElementById("error-message");
 const noResultsState = document.getElementById("no-results-state");
 const searchQueryDisplay = document.getElementById("search-query-display");
 const dashboard = document.querySelector(".weather-dashboard");
-const weatherDetails = document.getElementById(".weather-details")
+const weatherDetails = document.querySelector(".weather-details")
 const retryButton = document.getElementById("retry-button");
 
 const API_BASE_URL = "https://api.open-meteo.com/v1/forecast";

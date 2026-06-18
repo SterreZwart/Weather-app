@@ -241,7 +241,12 @@ body {
 }
 .weather-dashboard {
   display: grid;
-  grid-column: 1 / span 2;/*step 1 of changing the layout*/
+  /* This ensures the dashboard spans the full width of its parent */
+    grid-column: 1 / span 3; 
+    
+    /* Use 1fr for the left side and 2fr for the hourly forecast on the right */
+    grid-template-columns: 1fr 30%; 
+    
   grid-row:1 / span ;
   gap: 40px;
   height: 100%;
@@ -357,7 +362,7 @@ body {
   padding:  32px;
   display: flex;
   flex-direction: column;
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row:1 / span 3;
   max-height: 100%; /* Ensure it doesn't grow indefinitely */
   overflow: hidden;
@@ -480,7 +485,7 @@ body {
 
 /*make weekly/daily weather here newww*/
 .daily-forecast-section  {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
   grid-row: 3 / span 1;
   display: flex;
   flex-direction: column;
