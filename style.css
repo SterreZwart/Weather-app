@@ -741,6 +741,8 @@ body.is-broken .main-content {
   .detail-item{
     padding: 16px;
     min-width: 0;
+    align-items: center;
+    text-align: center;
   }
   .detail-label {
     font-size: 0.75rem; /* Smaller labels for long words like Precipitation */
