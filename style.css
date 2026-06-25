@@ -745,11 +745,11 @@ body.is-broken .main-content {
     text-align: center;
   }
   .detail-label {
-    font-size: 0.75rem; /* Smaller labels for long words like Precipitation */
+    font-size: 1rem ; /* Smaller labels for long words like Precipitation */
   }
 
   .detail-value {
-    font-size: 1.4rem; /* Reduced from 1.8rem */
+    font-size: 1.5rem; /* Reduced from 1.8rem */
   }
 
   /* 4. Fix Daily Forecast Card sizes */
