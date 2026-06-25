@@ -637,8 +637,8 @@ body.is-broken .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
+    <!--margin-left: 24px;
+    margin-right: 24px;-->
   }
 
   .main-content {
@@ -663,7 +663,7 @@ body.is-broken .main-content {
     padding: 20px;
     flex-direction: column;
     text-align: center;
-    gap: 24px;
+    gap: 0px;
     background-image: url('./assets/images/bg-today-small.svg');
     min-height: auto;
   }
