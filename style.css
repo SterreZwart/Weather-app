@@ -726,7 +726,7 @@ body.is-broken .main-content {
 
   .daily-forecast-section {
     width: 100%;
-    overflow: scroll;   /*fix daily forecast section mobile layout. flex? 3fr repeat*/
+    overflow: hidden;   /* changed from scroll to remove scrollbar */
   }
   .forecast-content2{
     display: grid;
@@ -734,7 +734,6 @@ body.is-broken .main-content {
     gap: px;
   }
 
-  }
   .forecast-section{
     padding: 20px;
     max-width: 100vw;
@@ -779,4 +778,18 @@ body.is-broken .main-content {
     max-width: 100vw;
     align-self: center; /*fixed centering after changing width and max-width*/
   }
+
+  /* Hide scrollbars on mobile scrollable elements */
+  .daily-grid,
+  .hourly-day-selector,
+  .forecast-content {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .daily-grid::-webkit-scrollbar,
+  .hourly-day-selector::-webkit-scrollbar,
+  .forecast-content::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
 
