@@ -1,4 +1,4 @@
-# Weather App Code Index
+ # Weather App Code Index
 
 This index provides a comprehensive map of the codebase, detailing the purpose of each file, its components, functions, styles, and state management.
 
